@@ -1,0 +1,226 @@
+.page-hero {
+  padding: 6rem 0 4rem;
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  text-align: center;
+}
+
+.page-badge {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: var(--bg-card);
+  border: 2px solid var(--cyan-primary);
+  color: var(--text-primary);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 15px var(--cyan-glow);
+}
+
+.page-title {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Services détaillés */
+.services-detailed {
+  padding: 4rem 0;
+}
+
+.service-detail {
+  background: var(--bg-card);
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s;
+}
+
+.service-detail:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--cyan-primary);
+}
+
+.service-detail-header {
+  background: var(--bg-secondary);
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.service-number {
+  font-size: 3.5rem;
+  font-weight: 900;
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-number.cyber {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.15), rgba(0, 170, 228, 0.2));
+  color: var(--cyan-primary);
+  border: 2px solid var(--cyan-primary);
+  box-shadow: 0 0 20px var(--cyan-glow);
+}
+
+.service-number.mint {
+  background: linear-gradient(135deg, rgba(15, 252, 190, 0.15), rgba(0, 255, 255, 0.2));
+  color: var(--mint-fresh);
+  border: 2px solid var(--mint-fresh);
+  box-shadow: 0 0 20px var(--mint-glow);
+}
+
+.service-detail-header h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.service-tagline {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.service-detail-body {
+  padding: 3rem;
+}
+
+.service-intro {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.features-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.feature-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateX(8px);
+  border-color: var(--cyan-primary);
+  box-shadow: 0 0 15px var(--cyan-glow);
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.feature-icon.cyber {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.15), rgba(0, 170, 228, 0.2));
+  color: var(--cyan-primary);
+  border: 2px solid var(--cyan-primary);
+}
+
+.feature-icon.mint {
+  background: linear-gradient(135deg, rgba(15, 252, 190, 0.15), rgba(0, 255, 255, 0.2));
+  color: var(--mint-fresh);
+  border: 2px solid var(--mint-fresh);
+}
+
+.feature-item h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* OPSEC */
+.opsec-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  border-left: 5px solid var(--cyan-primary);
+}
+
+.opsec-header {
+  margin-bottom: 2rem;
+}
+
+.opsec-badge {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.opsec-badge.level-1 {
+  background: var(--bg-card);
+  border: 2px solid var(--cyan-primary);
+  color: var(--text-primary);
+  box-shadow: 0 0 10px var(--cyan-glow);
+}
+
+.opsec-badge.level-2 {
+  background: var(--bg-card);
+  border: 2px solid var(--mint-fresh);
+  color: var(--text-primary);
+  box-shadow: 0 0 10px var(--mint-glow);
+}
+
+.opsec-header h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .service-detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service-detail-body {
+    padding: 2rem 1.5rem;
+  }
+}
