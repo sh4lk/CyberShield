@@ -1,4 +1,3 @@
-// Charger navbar et footer
 async function loadComponent(file, placeholderId) {
   try {
     const response = await fetch(file);
@@ -9,12 +8,10 @@ async function loadComponent(file, placeholderId) {
   }
 }
 
-// Au chargement de la page
 document.addEventListener('DOMContentLoaded', async () => {
   await loadComponent('components/navbar.html', 'navbar-placeholder');
   await loadComponent('components/footer.html', 'footer-placeholder');
 
-  // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       const targetId = link.getAttribute('href');
@@ -31,7 +28,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   });
 
-  // Animations au scroll
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -54,7 +50,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     observer.observe(el);
   });
 
-  // Shadow navbar au scroll
   const navbar = document.querySelector('.navbar');
   window.addEventListener('scroll', () => {
     if (!navbar) return;
